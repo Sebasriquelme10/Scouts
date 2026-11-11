@@ -1,2 +1,2 @@
 # Scouts
-Este va ser el repositorio el cual se va a poder visualizar el proyecto de Bases de Datos Relacionales. 
+Este sera el repositorio en el cual se  visualizará el proyecto de Bases de Datos no Relacionales. 
