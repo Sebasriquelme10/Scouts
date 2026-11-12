@@ -1,7 +1,7 @@
 # Scouts
 Este va ser el repositorio el cual se va a poder visualizar el proyecto de Bases de Datos no Relacionales. 
 # Nombres
-Christian Gael Silva López, José Luis Flores Castillon, Paulo Ignacio Aviña Gonzalez y Sebastián Ramos Espinosa. 
+Christian Gael Silva López - 757117 , José Luis Flores Castillon - 757004, Paulo Ignacio Aviña Gonzalez - 757355 y Sebastián Ramos Espinosa - 758580. 
 
 # Descripción
 La funcionalidad del proyecto consiste en una plataforma analítica deportiva en tiempo real, la cual está diseñada para poder facilitar la toma de decisiones tácticas, físicas y gerenciales de un club de fútbol. El sistema actúa como un ayudante del cuerpo técnico porque ayuda con los expedientes históricos de los jugadores y contratos, analiza las interacciones tácticas en el campo y procesa los flujos masivos de datos y eventos del partido al instante. 
