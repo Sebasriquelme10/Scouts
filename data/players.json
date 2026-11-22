@@ -1,0 +1,50 @@
+[
+  {
+    "player_id": "p_01",
+    "name": "Mateo Navarro",
+    "birth_date": "2001-04-12T00:00:00Z",
+    "nationality": "MX",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": 179,
+      "weight_kg": 74
+    },
+    "positions": ["CM", "CAM"],
+    "agent_id": "a_01",
+    "contracts": [
+      {
+        "contract_id": "ctr_101",
+        "team_id": "t_01",
+        "salary_per_year": 450000,
+        "contract_start": "2024-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3500000,
+        "active": true
+      }
+    ]
+  },
+  {
+    "player_id": "p_02",
+    "name": "Diego Morales",
+    "birth_date": "1999-09-23T00:00:00Z",
+    "nationality": "AR",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": 184,
+      "weight_kg": 79
+    },
+    "positions": ["ST", "RW"],
+    "agent_id": "a_01",
+    "contracts": [
+      {
+        "contract_id": "ctr_102",
+        "team_id": "t_01",
+        "salary_per_year": 620000,
+        "contract_start": "2023-01-15T00:00:00Z",
+        "contract_end": "2027-01-14T00:00:00Z",
+        "buyout_clause": 5000000,
+        "active": true
+      }
+    ]
+  }
+]

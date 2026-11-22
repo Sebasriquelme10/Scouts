@@ -1,0 +1,68 @@
+{
+  "matches": [
+    {
+      "match_id": "m_01",
+      "competition_id": "c_01",
+      "date": "2026-11-15T19:00:00Z",
+      "home_team_id": "t_01",
+      "away_team_id": "t_02",
+      "final_score": { "home_score": 2, "away_score": 1 },
+      "home_stats": { "possession": 58, "shots": 14, "fouls": 11 },
+      "away_stats": { "possession": 42, "shots": 8, "fouls": 15 }
+    }
+  ],
+  "match_events": [
+    {
+      "match_id": "m_01",
+      "event_timestamp": "2026-11-15T19:14:22.450Z",
+      "event_id": "evt_001",
+      "player_id": "p_01",
+      "team_id": "t_01",
+      "event_type": "pass",
+      "details": { "target_player_id": "p_02", "zone": "final_third" }
+    }
+  ],
+  "player_biometrics": [
+    {
+      "match_id": "m_01",
+      "player_id": "p_01",
+      "player_name": "Mateo Navarro",
+      "team_id": "t_01",
+      "team_name": "Club Titanes",
+      "timestamp": "2026-11-15T19:14:23.000Z",
+      "heart_rate": 172,
+      "instant_speed_kmh": 24.6,
+      "distance_covered_meters": 4120.5
+    }
+  ],
+  "live_scoreboard": [
+    {
+      "match_id": "m_01",
+      "quarter_period": 1,
+      "game_time_remaining": 1840,
+      "update_timestamp": "2026-11-15T19:14:25.100Z",
+      "home_score": 1,
+      "away_score": 0,
+      "scoring_player_id": "p_02"
+    }
+  ],
+  "match_fouls": [
+    {
+      "match_id": "m_01",
+      "foul_timestamp": "2026-11-15T19:22:10.000Z",
+      "foul_id": "foul_001",
+      "offending_player_id": "p_01",
+      "drawn_by_player_id": "p_03",
+      "card_type": "Yellow"
+    }
+  ],
+  "match_stoppages": [
+    {
+      "match_id": "m_01",
+      "start_timestamp": "2026-11-15T19:35:00.000Z",
+      "stoppage_type": "VAR",
+      "duration_seconds": 95,
+      "referee_decision": "Goal Confirmed"
+    }
+  ]
+}

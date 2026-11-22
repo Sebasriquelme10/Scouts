@@ -1,0 +1,48 @@
+{
+  "player_season_stats": [
+    {
+      "player_id": "p_01",
+      "season": "2026-2027",
+      "games_played": 14,
+      "goals": 11,
+      "average_minutes": 82.5,
+      "accuracy_percentages": {
+        "passing": 88.4,
+        "shooting": 46.2
+      }
+    },
+    {
+      "player_id": "p_02",
+      "season": "2026-2027",
+      "games_played": 15,
+      "goals": 18,
+      "average_minutes": 86.0,
+      "accuracy_percentages": {
+        "passing": 79.1,
+        "shooting": 54.8
+      }
+    }
+  ],
+  "standings": [
+    {
+      "competition_id": "c_01",
+      "season": "2026-2027",
+      "standings_table": [
+        {
+          "team_id": "t_01",
+          "points": 34,
+          "wins": 10,
+          "losses": 1,
+          "goal_difference": 19
+        },
+        {
+          "team_id": "t_02",
+          "points": 25,
+          "wins": 7,
+          "losses": 4,
+          "goal_difference": 6
+        }
+      ]
+    }
+  ]
+}

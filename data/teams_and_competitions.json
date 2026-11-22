@@ -1,0 +1,39 @@
+{
+  "competitions": [
+    {
+      "competition_id": "c_01",
+      "name": "Liga MX",
+      "season": "2026-2027",
+      "region": "Mexico"
+    }
+  ],
+  "teams": [
+    {
+      "team_id": "t_01",
+      "team_name": "Club Titanes",
+      "season": "2026-2027",
+      "head_coach": "Carlos Herrera",
+      "roster": [
+        {
+          "player_id": "p_01",
+          "jersey_number": 8,
+          "role": "Starter",
+          "since": "2024-07-01"
+        },
+        {
+          "player_id": "p_02",
+          "jersey_number": 9,
+          "role": "Starter",
+          "since": "2023-01-15"
+        }
+      ]
+    },
+    {
+      "team_id": "t_02",
+      "team_name": "Deportivo Norte",
+      "season": "2026-2027",
+      "head_coach": "Luis Mendoza",
+      "roster": []
+    }
+  ]
+}

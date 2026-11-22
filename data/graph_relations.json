@@ -1,0 +1,28 @@
+{
+  "agents": [
+    { "agent_id": "a_01", "name": "Apex Sports Group", "country": "MX" }
+  ],
+  "injuries": [
+    {
+      "injury_id": "inj_01",
+      "type": "Hamstring Strain",
+      "severity": "Moderate",
+      "date": "2026-11-16T00:00:00Z"
+    }
+  ],
+  "belongs": [
+    { "player_id": "p_01", "team_id": "t_01", "since": "2024-07-01T00:00:00Z", "jersey_number": 8 }
+  ],
+  "played_in": [
+    { "player_id": "p_01", "match_id": "m_01", "starter": true, "minutes_played": 88 }
+  ],
+  "passed_to": [
+    { "from_player_id": "p_01", "to_player_id": "p_02", "match_id": "m_01", "successful_passes_count": 27 }
+  ],
+  "faced_in_duel": [
+    { "player_a_id": "p_01", "player_b_id": "p_03", "match_id": "m_01", "duels_won": 5 }
+  ],
+  "player_injuries": [
+    { "match_id": "m_01", "player_id": "p_01", "injury_id": "inj_01" }
+  ]
+}
