@@ -1,0 +1,556 @@
+{
+  "dataset": "Scouts Liga MX: SOLO JSON, sustitucion del dataset anterior",
+  "season": "2026-2027",
+  "consulted_on": "2026-11-23",
+  "scope": "Academic demonstration, not an official full roster or real statistical record.",
+  "sourced_fields": [
+    "club names",
+    "selected player names and club affiliations",
+    "head_coach",
+    "jersey_number"
+  ],
+  "unverified_fields": [
+    "nationality",
+    "height_cm",
+    "weight_kg"
+  ],
+  "simulated_fields": [
+    "agent assignments",
+    "agents",
+    "contracts",
+    "salaries",
+    "buyout clauses",
+    "availability",
+    "membership since",
+    "roles",
+    "matches",
+    "scores",
+    "passes",
+    "participations",
+    "duels",
+    "biometrics",
+    "events",
+    "standings",
+    "season statistics",
+    "birth_date (all 72 are fictitious)",
+    "CM role added to MF for demonstration"
+  ],
+  "notes": [
+    "Dataset nuevo: 18 clubes y 72 jugadores. No incluye Mateo Navarro, Diego Morales, Andres Castillo ni los dos clubes ficticios anteriores.",
+    "Los identificadores p_01, t_01, m_01 se reutilizan para que las consultas originales encuentren los nuevos registros.",
+    "Las 72 fechas de nacimiento son FICTICIAS y solo sirven para probar los parsers y filtros de edad. No representan edades reales.",
+    "MF conserva su categoria fuente y recibe CM como rol SIMULADO para que la busqueda original CM produzca ejemplos.",
+    "Rasgos fisicos no verificados siguen en null; nacionalidad no verificada sigue en Unknown.",
+    "Partidos, resultados, pases, agencias, contratos y estadisticas son simulados.",
+    "Reemplazar JSON no elimina documentos de MongoDB por si solo. Para una sustitucion completa, vaciar las seis colecciones del proyecto antes de recargar.",
+    "Los cargadores originales de Cassandra y Dgraph reinician sus respectivas bases configuradas al ejecutarse.",
+    "Los cargadores originales comparten data/ en la raiz; la version aislada de Dgraph lee Dgraph/data/."
+  ],
+  "club_list_source": "https://mexico.as.com/resultados/futbol/mexico_apertura/equipos/",
+  "sources": [
+    {
+      "team_id": "t_01",
+      "team_name": "América",
+      "roster_source": "https://mexico.as.com/resultados/ficha/equipo/america/96/plantilla/",
+      "head_coach_source": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "players": [
+        {
+          "player_id": "p_01",
+          "name": "Luis Malagón",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/america/96/plantilla/"
+        },
+        {
+          "player_id": "p_02",
+          "name": "Israel Reyes",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/america/96/plantilla/"
+        },
+        {
+          "player_id": "p_03",
+          "name": "Alan Cervantes",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/america/96/plantilla/"
+        },
+        {
+          "player_id": "p_04",
+          "name": "Henry Martin",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/america/96/plantilla/"
+        }
+      ]
+    },
+    {
+      "team_id": "t_02",
+      "team_name": "Atlante",
+      "roster_source": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "head_coach_source": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "players": [
+        {
+          "player_id": "p_05",
+          "name": "David Ospina",
+          "identity_source": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml"
+        },
+        {
+          "player_id": "p_06",
+          "name": "Eduardo Tercero",
+          "identity_source": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml"
+        },
+        {
+          "player_id": "p_07",
+          "name": "Christian Bermúdez",
+          "identity_source": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml"
+        },
+        {
+          "player_id": "p_08",
+          "name": "Luis Puente",
+          "identity_source": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml"
+        }
+      ]
+    },
+    {
+      "team_id": "t_03",
+      "team_name": "Atlas",
+      "roster_source": "https://mexico.as.com/resultados/ficha/equipo/atlas/4223/plantilla/",
+      "head_coach_source": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "players": [
+        {
+          "player_id": "p_09",
+          "name": "Camilo Vargas",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/atlas/4223/plantilla/"
+        },
+        {
+          "player_id": "p_10",
+          "name": "Gaddi Aguirre",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/atlas/4223/plantilla/"
+        },
+        {
+          "player_id": "p_11",
+          "name": "Aldo Rocha",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/atlas/4223/plantilla/"
+        },
+        {
+          "player_id": "p_12",
+          "name": "Florián Monzón",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/atlas/4223/plantilla/"
+        }
+      ]
+    },
+    {
+      "team_id": "t_04",
+      "team_name": "Atlético de San Luis",
+      "roster_source": "https://mexico.as.com/resultados/ficha/equipo/san_luis/3834/plantilla/",
+      "head_coach_source": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "players": [
+        {
+          "player_id": "p_13",
+          "name": "Andrés Sánchez",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/san_luis/3834/plantilla/"
+        },
+        {
+          "player_id": "p_14",
+          "name": "Eduardo Águila",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/san_luis/3834/plantilla/"
+        },
+        {
+          "player_id": "p_15",
+          "name": "Sébastien Salles-Lamonge",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/san_luis/3834/plantilla/"
+        },
+        {
+          "player_id": "p_16",
+          "name": "João Pedro",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/san_luis/3834/plantilla/"
+        }
+      ]
+    },
+    {
+      "team_id": "t_05",
+      "team_name": "FC Juárez",
+      "roster_source": "https://mexico.as.com/resultados/ficha/equipo/futbol_club_juarez/4641/plantilla/",
+      "head_coach_source": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "players": [
+        {
+          "player_id": "p_17",
+          "name": "Sebastián Jurado",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/futbol_club_juarez/4641/plantilla/"
+        },
+        {
+          "player_id": "p_18",
+          "name": "Alejandro Mayorga",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/futbol_club_juarez/4641/plantilla/"
+        },
+        {
+          "player_id": "p_19",
+          "name": "Denzell García",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/futbol_club_juarez/4641/plantilla/"
+        },
+        {
+          "player_id": "p_20",
+          "name": "Óscar Estupiñán",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/futbol_club_juarez/4641/plantilla/"
+        }
+      ]
+    },
+    {
+      "team_id": "t_06",
+      "team_name": "Guadalajara",
+      "roster_source": "https://mexico.as.com/resultados/ficha/equipo/chivas/3678/plantilla/",
+      "head_coach_source": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "players": [
+        {
+          "player_id": "p_21",
+          "name": "Raúl Rangel",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/chivas/3678/plantilla/"
+        },
+        {
+          "player_id": "p_22",
+          "name": "Miguel Tapias",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/chivas/3678/plantilla/"
+        },
+        {
+          "player_id": "p_23",
+          "name": "Luis Romo",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/chivas/3678/plantilla/"
+        },
+        {
+          "player_id": "p_24",
+          "name": "Roberto Alvarado",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/chivas/3678/plantilla/"
+        }
+      ]
+    },
+    {
+      "team_id": "t_07",
+      "team_name": "Cruz Azul",
+      "roster_source": "https://mexico.as.com/resultados/ficha/equipo/cruz_azul/4204/plantilla/",
+      "head_coach_source": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "players": [
+        {
+          "player_id": "p_25",
+          "name": "Kevin Mier",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/cruz_azul/4204/plantilla/"
+        },
+        {
+          "player_id": "p_26",
+          "name": "Willer Ditta",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/cruz_azul/4204/plantilla/"
+        },
+        {
+          "player_id": "p_27",
+          "name": "Carlos Rodríguez",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/cruz_azul/4204/plantilla/"
+        },
+        {
+          "player_id": "p_28",
+          "name": "Gabriel Fernández",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/cruz_azul/4204/plantilla/"
+        }
+      ]
+    },
+    {
+      "team_id": "t_08",
+      "team_name": "Querétaro",
+      "roster_source": "https://mexico.as.com/resultados/ficha/equipo/queretaro/4251/plantilla/",
+      "head_coach_source": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "players": [
+        {
+          "player_id": "p_29",
+          "name": "Guillermo Allison",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/queretaro/4251/plantilla/"
+        },
+        {
+          "player_id": "p_30",
+          "name": "Lucas Abascia",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/queretaro/4251/plantilla/"
+        },
+        {
+          "player_id": "p_31",
+          "name": "Santiago Homenchenko",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/queretaro/4251/plantilla/"
+        },
+        {
+          "player_id": "p_32",
+          "name": "Mateo Coronel",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/queretaro/4251/plantilla/"
+        }
+      ]
+    },
+    {
+      "team_id": "t_09",
+      "team_name": "León",
+      "roster_source": "https://mexico.as.com/resultados/ficha/equipo/leon_fc/3981/plantilla/",
+      "head_coach_source": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "players": [
+        {
+          "player_id": "p_33",
+          "name": "Óscar García",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/leon_fc/3981/plantilla/"
+        },
+        {
+          "player_id": "p_34",
+          "name": "Paúl Bellón",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/leon_fc/3981/plantilla/"
+        },
+        {
+          "player_id": "p_35",
+          "name": "Fernando Beltrán",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/leon_fc/3981/plantilla/"
+        },
+        {
+          "player_id": "p_36",
+          "name": "Díber Cambindo",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/leon_fc/3981/plantilla/"
+        }
+      ]
+    },
+    {
+      "team_id": "t_10",
+      "team_name": "Necaxa",
+      "roster_source": "https://mexico.as.com/resultados/ficha/equipo/nexaca/4282/plantilla/",
+      "head_coach_source": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "players": [
+        {
+          "player_id": "p_37",
+          "name": "Luis Jiménez",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/nexaca/4282/plantilla/"
+        },
+        {
+          "player_id": "p_38",
+          "name": "Alexis Peña",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/nexaca/4282/plantilla/"
+        },
+        {
+          "player_id": "p_39",
+          "name": "Lorenzo Faravelli",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/nexaca/4282/plantilla/"
+        },
+        {
+          "player_id": "p_40",
+          "name": "Julián Carranza",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/nexaca/4282/plantilla/"
+        }
+      ]
+    },
+    {
+      "team_id": "t_11",
+      "team_name": "Pachuca",
+      "roster_source": "https://mexico.as.com/resultados/ficha/equipo/pachuca/4245/plantilla/",
+      "head_coach_source": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "players": [
+        {
+          "player_id": "p_41",
+          "name": "Carlos Moreno",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/pachuca/4245/plantilla/"
+        },
+        {
+          "player_id": "p_42",
+          "name": "Eduardo Bauermann",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/pachuca/4245/plantilla/"
+        },
+        {
+          "player_id": "p_43",
+          "name": "Alán Bautista",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/pachuca/4245/plantilla/"
+        },
+        {
+          "player_id": "p_44",
+          "name": "Salomón Rondón",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/pachuca/4245/plantilla/"
+        }
+      ]
+    },
+    {
+      "team_id": "t_12",
+      "team_name": "Puebla",
+      "roster_source": "https://mexico.as.com/resultados/ficha/equipo/puebla/4246/plantilla/",
+      "head_coach_source": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "players": [
+        {
+          "player_id": "p_45",
+          "name": "Jesús Rodríguez",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/puebla/4246/plantilla/"
+        },
+        {
+          "player_id": "p_46",
+          "name": "Juan Pablo Vargas",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/puebla/4246/plantilla/"
+        },
+        {
+          "player_id": "p_47",
+          "name": "Raúl Castillo",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/puebla/4246/plantilla/"
+        },
+        {
+          "player_id": "p_48",
+          "name": "Kevin Velasco",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/puebla/4246/plantilla/"
+        }
+      ]
+    },
+    {
+      "team_id": "t_13",
+      "team_name": "Pumas UNAM",
+      "roster_source": "https://mexico.as.com/resultados/ficha/equipo/pumas/1597/plantilla/",
+      "head_coach_source": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "players": [
+        {
+          "player_id": "p_49",
+          "name": "Keylor Navas",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/pumas/1597/plantilla/"
+        },
+        {
+          "player_id": "p_50",
+          "name": "Nathan Silva",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/pumas/1597/plantilla/"
+        },
+        {
+          "player_id": "p_51",
+          "name": "Adalberto Carrasquilla",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/pumas/1597/plantilla/"
+        },
+        {
+          "player_id": "p_52",
+          "name": "Robert Morales",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/pumas/1597/plantilla/"
+        }
+      ]
+    },
+    {
+      "team_id": "t_14",
+      "team_name": "Monterrey",
+      "roster_source": "https://mexico.as.com/resultados/ficha/equipo/monterrey/4248/plantilla/",
+      "head_coach_source": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "players": [
+        {
+          "player_id": "p_53",
+          "name": "Esteban Andrada",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/monterrey/4248/plantilla/"
+        },
+        {
+          "player_id": "p_54",
+          "name": "Stefan Medina",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/monterrey/4248/plantilla/"
+        },
+        {
+          "player_id": "p_55",
+          "name": "Óliver Torres",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/monterrey/4248/plantilla/"
+        },
+        {
+          "player_id": "p_56",
+          "name": "Roberto de la Rosa",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/monterrey/4248/plantilla/"
+        }
+      ]
+    },
+    {
+      "team_id": "t_15",
+      "team_name": "Santos Laguna",
+      "roster_source": "https://mexico.as.com/resultados/ficha/equipo/santos_laguna/4250/plantilla/",
+      "head_coach_source": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "players": [
+        {
+          "player_id": "p_57",
+          "name": "Carlos Acevedo",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/santos_laguna/4250/plantilla/"
+        },
+        {
+          "player_id": "p_58",
+          "name": "Bruno Amione",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/santos_laguna/4250/plantilla/"
+        },
+        {
+          "player_id": "p_59",
+          "name": "Aldo López",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/santos_laguna/4250/plantilla/"
+        },
+        {
+          "player_id": "p_60",
+          "name": "Eduardo Aguirre",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/santos_laguna/4250/plantilla/"
+        }
+      ]
+    },
+    {
+      "team_id": "t_16",
+      "team_name": "Tigres UANL",
+      "roster_source": "https://mexico.as.com/resultados/ficha/equipo/tigres/4210/plantilla/",
+      "head_coach_source": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "players": [
+        {
+          "player_id": "p_61",
+          "name": "Nahuel Guzmán",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/tigres/4210/plantilla/"
+        },
+        {
+          "player_id": "p_62",
+          "name": "Jesús Angulo",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/tigres/4210/plantilla/"
+        },
+        {
+          "player_id": "p_63",
+          "name": "Fernando Gorriarán",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/tigres/4210/plantilla/"
+        },
+        {
+          "player_id": "p_64",
+          "name": "Rodrigo Aguirre",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/tigres/4210/plantilla/"
+        }
+      ]
+    },
+    {
+      "team_id": "t_17",
+      "team_name": "Toluca",
+      "roster_source": "https://mexico.as.com/resultados/ficha/equipo/toluca/4249/plantilla/",
+      "head_coach_source": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "players": [
+        {
+          "player_id": "p_65",
+          "name": "Hugo González",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/toluca/4249/plantilla/"
+        },
+        {
+          "player_id": "p_66",
+          "name": "Jesús Gallardo",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/toluca/4249/plantilla/"
+        },
+        {
+          "player_id": "p_67",
+          "name": "Marcel Ruiz",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/toluca/4249/plantilla/"
+        },
+        {
+          "player_id": "p_68",
+          "name": "Paulinho",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/toluca/4249/plantilla/"
+        }
+      ]
+    },
+    {
+      "team_id": "t_18",
+      "team_name": "Tijuana",
+      "roster_source": "https://mexico.as.com/resultados/ficha/equipo/tijuana/3828/plantilla/",
+      "head_coach_source": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "players": [
+        {
+          "player_id": "p_69",
+          "name": "Antonio Rodríguez",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/tijuana/3828/plantilla/"
+        },
+        {
+          "player_id": "p_70",
+          "name": "Unai Bilbao",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/tijuana/3828/plantilla/"
+        },
+        {
+          "player_id": "p_71",
+          "name": "Gilberto Mora",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/tijuana/3828/plantilla/"
+        },
+        {
+          "player_id": "p_72",
+          "name": "Adonis Preciado",
+          "identity_source": "https://mexico.as.com/resultados/ficha/equipo/tijuana/3828/plantilla/"
+        }
+      ]
+    }
+  ]
+}
