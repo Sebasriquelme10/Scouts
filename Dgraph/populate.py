@@ -11,6 +11,9 @@ birth_date: datetime .
 nationality: string .
 status: string @index(exact) .
 positions: [string] .
+competition: string @index(exact) .
+winner_team_id: string @index(exact) .
+
 
 team_id: string @index(exact) .
 team_name: string @index(exact, term) .
@@ -55,6 +58,7 @@ type Match {
     match_id
     date
     competition
+    winner_team_id
 }
 
 type Agent {
@@ -136,6 +140,12 @@ def populate_dgraph():
                 "match_id": mid,
                 "competition": comp_name,
             }
+            score = m.get("final_score")
+            if score is not None:
+                if score["home_score"] > score["away_score"]:
+                    node["winner_team_id"] = m["home_team_id"]
+                elif score["away_score"] > score["home_score"]:
+                    node["winner_team_id"] = m["away_team_id"]
             if "date" in m:
                 node["date"] = m["date"]
             mutations.append(node)
@@ -175,9 +185,26 @@ def populate_dgraph():
                 "uid": f"_:{p_in['match_id']}",
                 "played_in|starter": p_in["starter"],
                 "played_in|minutes_played": p_in["minutes_played"],
+                "played_in|team_id": p_in["team_id"],
             })
 
         for pl in players_raw:
+                    pass_totals = {}
+
+        for edge in relations_raw.get("passed_to", []):
+            pair = (edge["from_player_id"], edge["to_player_id"])
+            pass_totals[pair] = (
+                pass_totals.get(pair, 0)
+                + int(edge["successful_passes_count"])
+            )
+
+        passes_by_player = {}
+
+        for (source_id, target_id), total in pass_totals.items():
+            passes_by_player.setdefault(source_id, []).append({
+                "uid": f"_:{target_id}",
+                "passed_to|successful_passes_count": total,
+            })
             pid = pl["player_id"]
             player_node = {
                 "uid": f"_:{pid}",
@@ -195,9 +222,15 @@ def populate_dgraph():
             if pid in played_by_player:
                 player_node["played_in"] = played_by_player[pid]
 
-            # ESPACIO PARA NACHO (2.3 y 2.4):
-            # - 2.3: agregar arista 'represented_by' usando pl["agent_id"]
-            # - 2.4: agregar arista 'passed_to' desde relations_raw.get("passed_to", [])
+            agent_id = pl.get("agent_id")
+
+            if agent_id:
+                player_node["represented_by"] = [
+                    {"uid": f"_:{agent_id}"}
+                ]
+
+            if pid in passes_by_player:
+                player_node["passed_to"] = passes_by_player[pid]
             mutations.append(player_node)
 
         txn = client.txn()
