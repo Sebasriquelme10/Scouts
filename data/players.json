@@ -1,74 +1,3441 @@
 [
   {
     "player_id": "p_01",
-    "name": "Mateo Navarro",
-    "birth_date": "2001-04-12T00:00:00Z",
-    "nationality": "MX",
+    "name": "Luis Malagón",
+    "birth_date": "1997-01-01T00:00:00Z",
+    "nationality": "Unknown",
     "status": "Available",
     "physical_traits": {
-      "height_cm": 179,
-      "weight_kg": 74
+      "height_cm": null,
+      "weight_kg": null
     },
-    "positions": ["CM", "CAM"],
+    "positions": [
+      "GK"
+    ],
     "agent_id": "a_01",
     "contracts": [
       {
-        "contract_id": "ctr_101",
+        "contract_id": "demo_ctr_001",
         "team_id": "t_01",
-        "salary_per_year": 450000,
-        "contract_start": "2024-07-01T00:00:00Z",
+        "salary_per_year": 400000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
         "contract_end": "2027-06-30T00:00:00Z",
-        "buyout_clause": 3500000,
-        "active": true
+        "buyout_clause": 2000000,
+        "active": true,
+        "is_simulated": true
       }
-    ]
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/america/96/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "GK"
+      ]
+    }
   },
   {
     "player_id": "p_02",
-    "name": "Diego Morales",
-    "birth_date": "1999-09-23T00:00:00Z",
-    "nationality": "AR",
+    "name": "Israel Reyes",
+    "birth_date": "1998-02-02T00:00:00Z",
+    "nationality": "Unknown",
     "status": "Available",
     "physical_traits": {
-      "height_cm": 184,
-      "weight_kg": 79
+      "height_cm": null,
+      "weight_kg": null
     },
-    "positions": ["ST", "RW"],
+    "positions": [
+      "DF"
+    ],
+    "agent_id": "a_02",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_002",
+        "team_id": "t_01",
+        "salary_per_year": 425000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2050000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/america/96/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "DF"
+      ]
+    }
+  },
+  {
+    "player_id": "p_03",
+    "name": "Alan Cervantes",
+    "birth_date": "1999-03-03T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "MF",
+      "CM"
+    ],
+    "agent_id": "a_03",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_003",
+        "team_id": "t_01",
+        "salary_per_year": 450000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2100000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/america/96/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date",
+        "positions:CM"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "MF"
+      ],
+      "position_note": "CM es un rol de prueba para la consulta existente; la categoria fuente se conserva en source_positions."
+    }
+  },
+  {
+    "player_id": "p_04",
+    "name": "Henry Martin",
+    "birth_date": "2000-04-04T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "FW"
+    ],
+    "agent_id": "a_04",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_004",
+        "team_id": "t_01",
+        "salary_per_year": 475000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2150000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/america/96/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "FW"
+      ]
+    }
+  },
+  {
+    "player_id": "p_05",
+    "name": "David Ospina",
+    "birth_date": "2001-05-05T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "GK"
+    ],
+    "agent_id": "a_05",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_005",
+        "team_id": "t_02",
+        "salary_per_year": 420000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2100000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "GK"
+      ]
+    }
+  },
+  {
+    "player_id": "p_06",
+    "name": "Eduardo Tercero",
+    "birth_date": "2002-06-06T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "DF"
+    ],
+    "agent_id": "a_06",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_006",
+        "team_id": "t_02",
+        "salary_per_year": 445000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2150000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "DF"
+      ]
+    }
+  },
+  {
+    "player_id": "p_07",
+    "name": "Christian Bermúdez",
+    "birth_date": "2003-07-07T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "MF",
+      "CM"
+    ],
     "agent_id": "a_01",
     "contracts": [
       {
-        "contract_id": "ctr_102",
-        "team_id": "t_01",
-        "salary_per_year": 620000,
-        "contract_start": "2023-01-15T00:00:00Z",
-        "contract_end": "2027-01-14T00:00:00Z",
-        "buyout_clause": 5000000,
-        "active": true
+        "contract_id": "demo_ctr_007",
+        "team_id": "t_02",
+        "salary_per_year": 470000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2200000,
+        "active": true,
+        "is_simulated": true
       }
-    ]
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date",
+        "positions:CM"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "MF"
+      ],
+      "position_note": "CM es un rol de prueba para la consulta existente; la categoria fuente se conserva en source_positions."
+    }
   },
   {
-      "player_id": "p_04",
-      "name": "Andrés Castillo",
-      "birth_date": "2000-06-18T00:00:00Z",
-      "nationality": "MX",
-      "status": "Available",
-      "physical_traits": {
-        "height_cm": 181,
-        "weight_kg": 76
-      },
-      "positions": ["CM", "CDM"],
-      "agent_id": "a_01",
-      "contracts": [
-        {
-          "contract_id": "ctr_104",
-          "team_id": "t_01",
-          "salary_per_year": 480000,
-          "contract_start": "2026-07-01T00:00:00Z",
-          "contract_end": "2029-06-30T00:00:00Z",
-          "buyout_clause": 4000000,
-          "active": true
+    "player_id": "p_08",
+    "name": "Luis Puente",
+    "birth_date": "2004-08-08T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "FW"
+    ],
+    "agent_id": "a_02",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_008",
+        "team_id": "t_02",
+        "salary_per_year": 495000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2250000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "FW"
+      ]
     }
-  ]
-}
+  },
+  {
+    "player_id": "p_09",
+    "name": "Camilo Vargas",
+    "birth_date": "2005-09-09T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "GK"
+    ],
+    "agent_id": "a_03",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_009",
+        "team_id": "t_03",
+        "salary_per_year": 440000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2200000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/atlas/4223/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "GK"
+      ]
+    }
+  },
+  {
+    "player_id": "p_10",
+    "name": "Gaddi Aguirre",
+    "birth_date": "1997-10-10T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "DF"
+    ],
+    "agent_id": "a_04",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_010",
+        "team_id": "t_03",
+        "salary_per_year": 465000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2250000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/atlas/4223/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "DF"
+      ]
+    }
+  },
+  {
+    "player_id": "p_11",
+    "name": "Aldo Rocha",
+    "birth_date": "1998-11-11T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "MF",
+      "CM"
+    ],
+    "agent_id": "a_05",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_011",
+        "team_id": "t_03",
+        "salary_per_year": 490000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2300000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/atlas/4223/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date",
+        "positions:CM"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "MF"
+      ],
+      "position_note": "CM es un rol de prueba para la consulta existente; la categoria fuente se conserva en source_positions."
+    }
+  },
+  {
+    "player_id": "p_12",
+    "name": "Florián Monzón",
+    "birth_date": "1999-12-12T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "FW"
+    ],
+    "agent_id": "a_06",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_012",
+        "team_id": "t_03",
+        "salary_per_year": 515000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2350000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/atlas/4223/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "FW"
+      ]
+    }
+  },
+  {
+    "player_id": "p_13",
+    "name": "Andrés Sánchez",
+    "birth_date": "2000-01-13T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "GK"
+    ],
+    "agent_id": "a_01",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_013",
+        "team_id": "t_04",
+        "salary_per_year": 460000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2300000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/san_luis/3834/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "GK"
+      ]
+    }
+  },
+  {
+    "player_id": "p_14",
+    "name": "Eduardo Águila",
+    "birth_date": "2001-02-14T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "DF"
+    ],
+    "agent_id": "a_02",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_014",
+        "team_id": "t_04",
+        "salary_per_year": 485000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2350000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/san_luis/3834/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "DF"
+      ]
+    }
+  },
+  {
+    "player_id": "p_15",
+    "name": "Sébastien Salles-Lamonge",
+    "birth_date": "2002-03-15T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "MF",
+      "CM"
+    ],
+    "agent_id": "a_03",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_015",
+        "team_id": "t_04",
+        "salary_per_year": 510000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2400000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/san_luis/3834/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date",
+        "positions:CM"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "MF"
+      ],
+      "position_note": "CM es un rol de prueba para la consulta existente; la categoria fuente se conserva en source_positions."
+    }
+  },
+  {
+    "player_id": "p_16",
+    "name": "João Pedro",
+    "birth_date": "2003-04-16T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "FW"
+    ],
+    "agent_id": "a_04",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_016",
+        "team_id": "t_04",
+        "salary_per_year": 535000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2450000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/san_luis/3834/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "FW"
+      ]
+    }
+  },
+  {
+    "player_id": "p_17",
+    "name": "Sebastián Jurado",
+    "birth_date": "2004-05-17T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "GK"
+    ],
+    "agent_id": "a_05",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_017",
+        "team_id": "t_05",
+        "salary_per_year": 480000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2400000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/futbol_club_juarez/4641/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "GK"
+      ]
+    }
+  },
+  {
+    "player_id": "p_18",
+    "name": "Alejandro Mayorga",
+    "birth_date": "2005-06-18T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "DF"
+    ],
+    "agent_id": "a_06",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_018",
+        "team_id": "t_05",
+        "salary_per_year": 505000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2450000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/futbol_club_juarez/4641/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "DF"
+      ]
+    }
+  },
+  {
+    "player_id": "p_19",
+    "name": "Denzell García",
+    "birth_date": "1997-07-19T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "MF",
+      "CM"
+    ],
+    "agent_id": "a_01",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_019",
+        "team_id": "t_05",
+        "salary_per_year": 530000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2500000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/futbol_club_juarez/4641/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date",
+        "positions:CM"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "MF"
+      ],
+      "position_note": "CM es un rol de prueba para la consulta existente; la categoria fuente se conserva en source_positions."
+    }
+  },
+  {
+    "player_id": "p_20",
+    "name": "Óscar Estupiñán",
+    "birth_date": "1998-08-20T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "FW"
+    ],
+    "agent_id": "a_02",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_020",
+        "team_id": "t_05",
+        "salary_per_year": 555000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2550000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/futbol_club_juarez/4641/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "FW"
+      ]
+    }
+  },
+  {
+    "player_id": "p_21",
+    "name": "Raúl Rangel",
+    "birth_date": "1999-09-21T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "GK"
+    ],
+    "agent_id": "a_03",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_021",
+        "team_id": "t_06",
+        "salary_per_year": 500000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2500000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/chivas/3678/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "GK"
+      ]
+    }
+  },
+  {
+    "player_id": "p_22",
+    "name": "Miguel Tapias",
+    "birth_date": "2000-10-22T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "DF"
+    ],
+    "agent_id": "a_04",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_022",
+        "team_id": "t_06",
+        "salary_per_year": 525000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2550000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/chivas/3678/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "DF"
+      ]
+    }
+  },
+  {
+    "player_id": "p_23",
+    "name": "Luis Romo",
+    "birth_date": "2001-11-23T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "MF",
+      "CM"
+    ],
+    "agent_id": "a_05",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_023",
+        "team_id": "t_06",
+        "salary_per_year": 550000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2600000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/chivas/3678/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date",
+        "positions:CM"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "MF"
+      ],
+      "position_note": "CM es un rol de prueba para la consulta existente; la categoria fuente se conserva en source_positions."
+    }
+  },
+  {
+    "player_id": "p_24",
+    "name": "Roberto Alvarado",
+    "birth_date": "2002-12-24T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "FW"
+    ],
+    "agent_id": "a_06",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_024",
+        "team_id": "t_06",
+        "salary_per_year": 575000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2650000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/chivas/3678/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "FW"
+      ]
+    }
+  },
+  {
+    "player_id": "p_25",
+    "name": "Kevin Mier",
+    "birth_date": "2003-01-25T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "GK"
+    ],
+    "agent_id": "a_01",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_025",
+        "team_id": "t_07",
+        "salary_per_year": 520000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2600000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/cruz_azul/4204/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "GK"
+      ]
+    }
+  },
+  {
+    "player_id": "p_26",
+    "name": "Willer Ditta",
+    "birth_date": "2004-02-26T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "DF"
+    ],
+    "agent_id": "a_02",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_026",
+        "team_id": "t_07",
+        "salary_per_year": 545000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2650000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/cruz_azul/4204/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "DF"
+      ]
+    }
+  },
+  {
+    "player_id": "p_27",
+    "name": "Carlos Rodríguez",
+    "birth_date": "2005-03-27T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "MF",
+      "CM"
+    ],
+    "agent_id": "a_03",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_027",
+        "team_id": "t_07",
+        "salary_per_year": 570000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2700000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/cruz_azul/4204/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date",
+        "positions:CM"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "MF"
+      ],
+      "position_note": "CM es un rol de prueba para la consulta existente; la categoria fuente se conserva en source_positions."
+    }
+  },
+  {
+    "player_id": "p_28",
+    "name": "Gabriel Fernández",
+    "birth_date": "1997-04-28T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "FW"
+    ],
+    "agent_id": "a_04",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_028",
+        "team_id": "t_07",
+        "salary_per_year": 595000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2750000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/cruz_azul/4204/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "FW"
+      ]
+    }
+  },
+  {
+    "player_id": "p_29",
+    "name": "Guillermo Allison",
+    "birth_date": "1998-05-01T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "GK"
+    ],
+    "agent_id": "a_05",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_029",
+        "team_id": "t_08",
+        "salary_per_year": 540000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2700000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/queretaro/4251/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "GK"
+      ]
+    }
+  },
+  {
+    "player_id": "p_30",
+    "name": "Lucas Abascia",
+    "birth_date": "1999-06-02T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "DF"
+    ],
+    "agent_id": "a_06",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_030",
+        "team_id": "t_08",
+        "salary_per_year": 565000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2750000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/queretaro/4251/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "DF"
+      ]
+    }
+  },
+  {
+    "player_id": "p_31",
+    "name": "Santiago Homenchenko",
+    "birth_date": "2000-07-03T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "MF",
+      "CM"
+    ],
+    "agent_id": "a_01",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_031",
+        "team_id": "t_08",
+        "salary_per_year": 590000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2800000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/queretaro/4251/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date",
+        "positions:CM"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "MF"
+      ],
+      "position_note": "CM es un rol de prueba para la consulta existente; la categoria fuente se conserva en source_positions."
+    }
+  },
+  {
+    "player_id": "p_32",
+    "name": "Mateo Coronel",
+    "birth_date": "2001-08-04T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "FW"
+    ],
+    "agent_id": "a_02",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_032",
+        "team_id": "t_08",
+        "salary_per_year": 615000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2850000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/queretaro/4251/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "FW"
+      ]
+    }
+  },
+  {
+    "player_id": "p_33",
+    "name": "Óscar García",
+    "birth_date": "2002-09-05T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "GK"
+    ],
+    "agent_id": "a_03",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_033",
+        "team_id": "t_09",
+        "salary_per_year": 560000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2800000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/leon_fc/3981/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "GK"
+      ]
+    }
+  },
+  {
+    "player_id": "p_34",
+    "name": "Paúl Bellón",
+    "birth_date": "2003-10-06T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "DF"
+    ],
+    "agent_id": "a_04",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_034",
+        "team_id": "t_09",
+        "salary_per_year": 585000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2850000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/leon_fc/3981/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "DF"
+      ]
+    }
+  },
+  {
+    "player_id": "p_35",
+    "name": "Fernando Beltrán",
+    "birth_date": "2004-11-07T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "MF",
+      "CM"
+    ],
+    "agent_id": "a_05",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_035",
+        "team_id": "t_09",
+        "salary_per_year": 610000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2900000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/leon_fc/3981/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date",
+        "positions:CM"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "MF"
+      ],
+      "position_note": "CM es un rol de prueba para la consulta existente; la categoria fuente se conserva en source_positions."
+    }
+  },
+  {
+    "player_id": "p_36",
+    "name": "Díber Cambindo",
+    "birth_date": "2005-12-08T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "FW"
+    ],
+    "agent_id": "a_06",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_036",
+        "team_id": "t_09",
+        "salary_per_year": 635000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2950000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/leon_fc/3981/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "FW"
+      ]
+    }
+  },
+  {
+    "player_id": "p_37",
+    "name": "Luis Jiménez",
+    "birth_date": "1997-01-09T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "GK"
+    ],
+    "agent_id": "a_01",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_037",
+        "team_id": "t_10",
+        "salary_per_year": 580000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2900000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/nexaca/4282/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "GK"
+      ]
+    }
+  },
+  {
+    "player_id": "p_38",
+    "name": "Alexis Peña",
+    "birth_date": "1998-02-10T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "DF"
+    ],
+    "agent_id": "a_02",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_038",
+        "team_id": "t_10",
+        "salary_per_year": 605000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 2950000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/nexaca/4282/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "DF"
+      ]
+    }
+  },
+  {
+    "player_id": "p_39",
+    "name": "Lorenzo Faravelli",
+    "birth_date": "1999-03-11T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "MF",
+      "CM"
+    ],
+    "agent_id": "a_03",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_039",
+        "team_id": "t_10",
+        "salary_per_year": 630000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3000000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/nexaca/4282/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date",
+        "positions:CM"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "MF"
+      ],
+      "position_note": "CM es un rol de prueba para la consulta existente; la categoria fuente se conserva en source_positions."
+    }
+  },
+  {
+    "player_id": "p_40",
+    "name": "Julián Carranza",
+    "birth_date": "2000-04-12T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "FW"
+    ],
+    "agent_id": "a_04",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_040",
+        "team_id": "t_10",
+        "salary_per_year": 655000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3050000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/nexaca/4282/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "FW"
+      ]
+    }
+  },
+  {
+    "player_id": "p_41",
+    "name": "Carlos Moreno",
+    "birth_date": "2001-05-13T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "GK"
+    ],
+    "agent_id": "a_05",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_041",
+        "team_id": "t_11",
+        "salary_per_year": 600000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3000000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/pachuca/4245/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "GK"
+      ]
+    }
+  },
+  {
+    "player_id": "p_42",
+    "name": "Eduardo Bauermann",
+    "birth_date": "2002-06-14T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "DF"
+    ],
+    "agent_id": "a_06",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_042",
+        "team_id": "t_11",
+        "salary_per_year": 625000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3050000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/pachuca/4245/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "DF"
+      ]
+    }
+  },
+  {
+    "player_id": "p_43",
+    "name": "Alán Bautista",
+    "birth_date": "2003-07-15T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "MF",
+      "CM"
+    ],
+    "agent_id": "a_01",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_043",
+        "team_id": "t_11",
+        "salary_per_year": 650000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3100000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/pachuca/4245/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date",
+        "positions:CM"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "MF"
+      ],
+      "position_note": "CM es un rol de prueba para la consulta existente; la categoria fuente se conserva en source_positions."
+    }
+  },
+  {
+    "player_id": "p_44",
+    "name": "Salomón Rondón",
+    "birth_date": "2004-08-16T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "FW"
+    ],
+    "agent_id": "a_02",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_044",
+        "team_id": "t_11",
+        "salary_per_year": 675000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3150000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/pachuca/4245/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "FW"
+      ]
+    }
+  },
+  {
+    "player_id": "p_45",
+    "name": "Jesús Rodríguez",
+    "birth_date": "2005-09-17T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "GK"
+    ],
+    "agent_id": "a_03",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_045",
+        "team_id": "t_12",
+        "salary_per_year": 620000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3100000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/puebla/4246/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "GK"
+      ]
+    }
+  },
+  {
+    "player_id": "p_46",
+    "name": "Juan Pablo Vargas",
+    "birth_date": "1997-10-18T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "DF"
+    ],
+    "agent_id": "a_04",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_046",
+        "team_id": "t_12",
+        "salary_per_year": 645000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3150000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/puebla/4246/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "DF"
+      ]
+    }
+  },
+  {
+    "player_id": "p_47",
+    "name": "Raúl Castillo",
+    "birth_date": "1998-11-19T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "MF",
+      "CM"
+    ],
+    "agent_id": "a_05",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_047",
+        "team_id": "t_12",
+        "salary_per_year": 670000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3200000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/puebla/4246/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date",
+        "positions:CM"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "MF"
+      ],
+      "position_note": "CM es un rol de prueba para la consulta existente; la categoria fuente se conserva en source_positions."
+    }
+  },
+  {
+    "player_id": "p_48",
+    "name": "Kevin Velasco",
+    "birth_date": "1999-12-20T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "FW"
+    ],
+    "agent_id": "a_06",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_048",
+        "team_id": "t_12",
+        "salary_per_year": 695000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3250000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/puebla/4246/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "FW"
+      ]
+    }
+  },
+  {
+    "player_id": "p_49",
+    "name": "Keylor Navas",
+    "birth_date": "2000-01-21T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "GK"
+    ],
+    "agent_id": "a_01",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_049",
+        "team_id": "t_13",
+        "salary_per_year": 640000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3200000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/pumas/1597/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "GK"
+      ]
+    }
+  },
+  {
+    "player_id": "p_50",
+    "name": "Nathan Silva",
+    "birth_date": "2001-02-22T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "DF"
+    ],
+    "agent_id": "a_02",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_050",
+        "team_id": "t_13",
+        "salary_per_year": 665000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3250000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/pumas/1597/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "DF"
+      ]
+    }
+  },
+  {
+    "player_id": "p_51",
+    "name": "Adalberto Carrasquilla",
+    "birth_date": "2002-03-23T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "MF",
+      "CM"
+    ],
+    "agent_id": "a_03",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_051",
+        "team_id": "t_13",
+        "salary_per_year": 690000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3300000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/pumas/1597/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date",
+        "positions:CM"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "MF"
+      ],
+      "position_note": "CM es un rol de prueba para la consulta existente; la categoria fuente se conserva en source_positions."
+    }
+  },
+  {
+    "player_id": "p_52",
+    "name": "Robert Morales",
+    "birth_date": "2003-04-24T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "FW"
+    ],
+    "agent_id": "a_04",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_052",
+        "team_id": "t_13",
+        "salary_per_year": 715000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3350000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/pumas/1597/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "FW"
+      ]
+    }
+  },
+  {
+    "player_id": "p_53",
+    "name": "Esteban Andrada",
+    "birth_date": "2004-05-25T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "GK"
+    ],
+    "agent_id": "a_05",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_053",
+        "team_id": "t_14",
+        "salary_per_year": 660000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3300000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/monterrey/4248/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "GK"
+      ]
+    }
+  },
+  {
+    "player_id": "p_54",
+    "name": "Stefan Medina",
+    "birth_date": "2005-06-26T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "DF"
+    ],
+    "agent_id": "a_06",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_054",
+        "team_id": "t_14",
+        "salary_per_year": 685000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3350000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/monterrey/4248/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "DF"
+      ]
+    }
+  },
+  {
+    "player_id": "p_55",
+    "name": "Óliver Torres",
+    "birth_date": "1997-07-27T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "MF",
+      "CM"
+    ],
+    "agent_id": "a_01",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_055",
+        "team_id": "t_14",
+        "salary_per_year": 710000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3400000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/monterrey/4248/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date",
+        "positions:CM"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "MF"
+      ],
+      "position_note": "CM es un rol de prueba para la consulta existente; la categoria fuente se conserva en source_positions."
+    }
+  },
+  {
+    "player_id": "p_56",
+    "name": "Roberto de la Rosa",
+    "birth_date": "1998-08-28T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "FW"
+    ],
+    "agent_id": "a_02",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_056",
+        "team_id": "t_14",
+        "salary_per_year": 735000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3450000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/monterrey/4248/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "FW"
+      ]
+    }
+  },
+  {
+    "player_id": "p_57",
+    "name": "Carlos Acevedo",
+    "birth_date": "1999-09-01T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "GK"
+    ],
+    "agent_id": "a_03",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_057",
+        "team_id": "t_15",
+        "salary_per_year": 680000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3400000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/santos_laguna/4250/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "GK"
+      ]
+    }
+  },
+  {
+    "player_id": "p_58",
+    "name": "Bruno Amione",
+    "birth_date": "2000-10-02T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "DF"
+    ],
+    "agent_id": "a_04",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_058",
+        "team_id": "t_15",
+        "salary_per_year": 705000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3450000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/santos_laguna/4250/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "DF"
+      ]
+    }
+  },
+  {
+    "player_id": "p_59",
+    "name": "Aldo López",
+    "birth_date": "2001-11-03T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "MF",
+      "CM"
+    ],
+    "agent_id": "a_05",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_059",
+        "team_id": "t_15",
+        "salary_per_year": 730000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3500000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/santos_laguna/4250/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date",
+        "positions:CM"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "MF"
+      ],
+      "position_note": "CM es un rol de prueba para la consulta existente; la categoria fuente se conserva en source_positions."
+    }
+  },
+  {
+    "player_id": "p_60",
+    "name": "Eduardo Aguirre",
+    "birth_date": "2002-12-04T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "FW"
+    ],
+    "agent_id": "a_06",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_060",
+        "team_id": "t_15",
+        "salary_per_year": 755000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3550000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/santos_laguna/4250/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "FW"
+      ]
+    }
+  },
+  {
+    "player_id": "p_61",
+    "name": "Nahuel Guzmán",
+    "birth_date": "2003-01-05T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "GK"
+    ],
+    "agent_id": "a_01",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_061",
+        "team_id": "t_16",
+        "salary_per_year": 700000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3500000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/tigres/4210/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "GK"
+      ]
+    }
+  },
+  {
+    "player_id": "p_62",
+    "name": "Jesús Angulo",
+    "birth_date": "2004-02-06T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "DF"
+    ],
+    "agent_id": "a_02",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_062",
+        "team_id": "t_16",
+        "salary_per_year": 725000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3550000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/tigres/4210/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "DF"
+      ]
+    }
+  },
+  {
+    "player_id": "p_63",
+    "name": "Fernando Gorriarán",
+    "birth_date": "2005-03-07T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "MF",
+      "CM"
+    ],
+    "agent_id": "a_03",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_063",
+        "team_id": "t_16",
+        "salary_per_year": 750000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3600000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/tigres/4210/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date",
+        "positions:CM"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "MF"
+      ],
+      "position_note": "CM es un rol de prueba para la consulta existente; la categoria fuente se conserva en source_positions."
+    }
+  },
+  {
+    "player_id": "p_64",
+    "name": "Rodrigo Aguirre",
+    "birth_date": "1997-04-08T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "FW"
+    ],
+    "agent_id": "a_04",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_064",
+        "team_id": "t_16",
+        "salary_per_year": 775000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3650000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/tigres/4210/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "FW"
+      ]
+    }
+  },
+  {
+    "player_id": "p_65",
+    "name": "Hugo González",
+    "birth_date": "1998-05-09T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "GK"
+    ],
+    "agent_id": "a_05",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_065",
+        "team_id": "t_17",
+        "salary_per_year": 720000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3600000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/toluca/4249/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "GK"
+      ]
+    }
+  },
+  {
+    "player_id": "p_66",
+    "name": "Jesús Gallardo",
+    "birth_date": "1999-06-10T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "DF"
+    ],
+    "agent_id": "a_06",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_066",
+        "team_id": "t_17",
+        "salary_per_year": 745000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3650000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/toluca/4249/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "DF"
+      ]
+    }
+  },
+  {
+    "player_id": "p_67",
+    "name": "Marcel Ruiz",
+    "birth_date": "2000-07-11T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "MF",
+      "CM"
+    ],
+    "agent_id": "a_01",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_067",
+        "team_id": "t_17",
+        "salary_per_year": 770000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3700000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/toluca/4249/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date",
+        "positions:CM"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "MF"
+      ],
+      "position_note": "CM es un rol de prueba para la consulta existente; la categoria fuente se conserva en source_positions."
+    }
+  },
+  {
+    "player_id": "p_68",
+    "name": "Paulinho",
+    "birth_date": "2001-08-12T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "FW"
+    ],
+    "agent_id": "a_02",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_068",
+        "team_id": "t_17",
+        "salary_per_year": 795000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3750000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/toluca/4249/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "FW"
+      ]
+    }
+  },
+  {
+    "player_id": "p_69",
+    "name": "Antonio Rodríguez",
+    "birth_date": "2002-09-13T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "GK"
+    ],
+    "agent_id": "a_03",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_069",
+        "team_id": "t_18",
+        "salary_per_year": 740000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3700000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/tijuana/3828/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "GK"
+      ]
+    }
+  },
+  {
+    "player_id": "p_70",
+    "name": "Unai Bilbao",
+    "birth_date": "2003-10-14T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "DF"
+    ],
+    "agent_id": "a_04",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_070",
+        "team_id": "t_18",
+        "salary_per_year": 765000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3750000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/tijuana/3828/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "DF"
+      ]
+    }
+  },
+  {
+    "player_id": "p_71",
+    "name": "Gilberto Mora",
+    "birth_date": "2004-11-15T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "MF",
+      "CM"
+    ],
+    "agent_id": "a_05",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_071",
+        "team_id": "t_18",
+        "salary_per_year": 790000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3800000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/tijuana/3828/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date",
+        "positions:CM"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "MF"
+      ],
+      "position_note": "CM es un rol de prueba para la consulta existente; la categoria fuente se conserva en source_positions."
+    }
+  },
+  {
+    "player_id": "p_72",
+    "name": "Adonis Preciado",
+    "birth_date": "2005-12-16T00:00:00Z",
+    "nationality": "Unknown",
+    "status": "Available",
+    "physical_traits": {
+      "height_cm": null,
+      "weight_kg": null
+    },
+    "positions": [
+      "FW"
+    ],
+    "agent_id": "a_06",
+    "contracts": [
+      {
+        "contract_id": "demo_ctr_072",
+        "team_id": "t_18",
+        "salary_per_year": 815000,
+        "currency": "USD",
+        "contract_start": "2026-07-01T00:00:00Z",
+        "contract_end": "2027-06-30T00:00:00Z",
+        "buyout_clause": 3850000,
+        "active": true,
+        "is_simulated": true
+      }
+    ],
+    "data_provenance": {
+      "identity_and_club": "https://mexico.as.com/resultados/ficha/equipo/tijuana/3828/plantilla/",
+      "jersey_number": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+      "consulted_on": "2026-11-23",
+      "unverified_fields": [
+        "nationality",
+        "physical_traits"
+      ],
+      "simulated_fields": [
+        "status",
+        "agent_id",
+        "contracts",
+        "birth_date"
+      ],
+      "birth_date_note": "Fecha ficticia de demostracion, NO fecha de nacimiento real del jugador.",
+      "source_positions": [
+        "FW"
+      ]
+    }
+  }
 ]
+
