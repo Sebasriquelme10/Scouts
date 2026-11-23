@@ -1,0 +1,70 @@
+{
+  "ok": true,
+  "source_archive": "Scouts-main (3).zip",
+  "archive_root": "Scouts-main (2)/Scouts-main/",
+  "simulated_checks": 28,
+  "components": [
+    {
+      "component": "menu_general",
+      "ok": true,
+      "checks": [
+        "validacion_entrada",
+        "interprete_y_carpeta",
+        "errores_de_procesos",
+        "archivo_faltante",
+        "cancelar_reinicio",
+        "detener_carga_fallida",
+        "cargar_secuencia_simulada",
+        "abrir_submenu_sin_cargar"
+      ]
+    },
+    {
+      "component": "dgraph",
+      "ok": true,
+      "checks": [
+        "consulta_individual",
+        "jugador_parametrizado",
+        "equipo_y_minimo_parametrizados",
+        "cinco_consultas",
+        "minimo_invalido",
+        "cierre_tras_error",
+        "submenu_individual"
+      ],
+      "real_database_calls": 0
+    },
+    {
+      "component": "cassandra",
+      "ok": true,
+      "checks": [
+        "cql_original_sin_cambios",
+        "consulta_individual",
+        "parametros_enlazados",
+        "seis_consultas",
+        "cierre_si_falla_keyspace",
+        "submenu_individual"
+      ],
+      "real_database_calls": 0
+    },
+    {
+      "component": "mongodb",
+      "ok": true,
+      "checks": [
+        "ocho_consultas_individuales",
+        "equipo_partido_jugador",
+        "sin_escrituras_ni_indices",
+        "ocho_consultas_juntas",
+        "edades_invalidas",
+        "cierre_cliente",
+        "submenu_individual"
+      ],
+      "real_database_calls": 0
+    }
+  ],
+  "data_schema_populate_connect_files_included": false,
+  "original_project_files_modified": false,
+  "database_writes": 0,
+  "live_query_results_verified": false,
+  "live_dgraph_connection_attempt": "Connection refused at http://127.0.0.1:8180; no successful live queries",
+  "live_mongo_or_cassandra_tests": false,
+  "old_venv_status": "C:/Users/nacho/.venv refers to Python312 installation that is unavailable"
+}

@@ -1,58 +1,73 @@
+"""Punto de entrada: python main.py. No carga datos automaticamente."""
 from pathlib import Path
 import subprocess
 import sys
+from scouts_menu_utils import run_menu
 
 BASE_DIR = Path(__file__).resolve().parent
 
 
-def run_script(folder_name: str, script_name: str):
-    module_dir = BASE_DIR / folder_name
-    script_path = module_dir / script_name
-    if not script_path.exists():
-        print(f"[AVISO] No se encontró {script_path}")
-        return
-    print(f"\n--- Ejecutando {folder_name}/{script_name} ---")
-    subprocess.run([sys.executable, str(script_path)], cwd=str(module_dir), check=False)
+def run_script(folder_name, script_name, arguments=()):
+    script_path = BASE_DIR / folder_name / script_name
+    if not script_path.is_file():
+        print(f"No se encontro el archivo: {script_path}")
+        return False
+    command = [sys.executable, "-B", "-X", "utf8", str(script_path), *arguments]
+    print(f"\n--- {folder_name}/{script_name} ---", flush=True)
+    try:
+        result = subprocess.run(command, cwd=str(script_path.parent), check=False)
+    except OSError as exc:
+        print(f"No se pudo iniciar el programa: {exc}")
+        return False
+    if result.returncode != 0:
+        print(f"La operacion de {folder_name} fallo (codigo {result.returncode}).")
+        return False
+    return True
 
 
-def show_menu():
-    print("\n=== SCOUTS - MENÚ DE BASES DE DATOS ===")
-    print("1. MongoDB: Setup / Poblar (mongo_setup.py)")
-    print("2. MongoDB: Consultas (main.py)")
-    print("3. Cassandra: Poblar (populate.py)")
-    print("4. Cassandra: Consultas (main.py)")
-    print("5. Dgraph: Poblar (populate.py)")
-    print("6. Dgraph: Consultas (main.py)")
-    print("7. Poblar las 3 bases en orden")
-    print("0. Salir")
+def populate(selected):
+    scripts = {
+        "Mongo": ("Mongo", "mongo_setup.py"),
+        "Cassandra": ("Cassandra", "populate.py"),
+        "Dgraph": ("Dgraph", "populate.py"),
+    }
+    print("\nSe usaran los JSON de data/ y las conexiones configuradas en cada base.")
+    if "Mongo" in selected:
+        print("MongoDB: agrega o actualiza documentos por ID; no elimina registros sobrantes.")
+    destructive = [name for name in selected if name in ("Cassandra", "Dgraph")]
+    if destructive:
+        print("ATENCION: los cargadores existentes reinician los datos de " + ", ".join(destructive) + ".")
+        print("Cassandra reinicia el keyspace scouts; Dgraph vacia la instancia configurada.")
+        answer = input("Escribe REINICIAR para continuar, o Enter para cancelar: ").strip()
+        if answer != "REINICIAR":
+            print("Carga cancelada.")
+            return False
+    for name in selected:
+        if not run_script(*scripts[name]):
+            print("La secuencia se detuvo. Las cargas anteriores que terminaron no se deshacen.")
+            return False
+    print("Carga terminada para las bases seleccionadas.")
+    return True
+
+
+def population_menu():
+    actions = {
+        "1": ("MongoDB: agregar/actualizar desde JSON", lambda: populate(["Mongo"])),
+        "2": ("Cassandra: reiniciar y cargar desde JSON", lambda: populate(["Cassandra"])),
+        "3": ("Dgraph: reiniciar y cargar desde JSON", lambda: populate(["Dgraph"])),
+        "4": ("Cargar las tres bases", lambda: populate(["Mongo", "Cassandra", "Dgraph"])),
+    }
+    run_menu("CARGA DE DATOS", actions)
 
 
 def main():
-    while True:
-        show_menu()
-        choice = input("Selecciona una opción: ").strip()
-
-        if choice == "1":
-            run_script("Mongo", "mongo_setup.py")
-        elif choice == "2":
-            run_script("Mongo", "main.py")
-        elif choice == "3":
-            run_script("Cassandra", "populate.py")
-        elif choice == "4":
-            run_script("Cassandra", "main.py")
-        elif choice == "5":
-            run_script("Dgraph", "populate.py")
-        elif choice == "6":
-            run_script("Dgraph", "main.py")
-        elif choice == "7":
-            run_script("Mongo", "mongo_setup.py")
-            run_script("Cassandra", "populate.py")
-            run_script("Dgraph", "populate.py")
-        elif choice == "0":
-            print("Saliendo...")
-            break
-        else:
-            print("[ERROR] Opción no válida.")
+    actions = {
+        "1": ("MongoDB: elegir consulta", lambda: run_script("Mongo", "main.py", ["--menu"])),
+        "2": ("Cassandra: elegir consulta", lambda: run_script("Cassandra", "main.py", ["--menu"])),
+        "3": ("Dgraph: elegir consulta", lambda: run_script("Dgraph", "main.py", ["--menu"])),
+        "4": ("Carga de datos", population_menu),
+    }
+    run_menu("SCOUTS - BASES DE DATOS", actions, exit_label="Salir")
 
 
 if __name__ == "__main__":

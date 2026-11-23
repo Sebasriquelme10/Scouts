@@ -1,3 +1,11 @@
+import argparse
+from pathlib import Path
+import sys
+
+# Permite ejecutar este archivo directamente y usar las utilidades de la raiz.
+sys.path.append(str(Path(__file__).resolve().parents[1]))
+from scouts_menu_utils import ask_text, ask_int, run_menu, show_json, season_default
+
 from datetime import datetime, timedelta, timezone
 from connect import get_mongo_db
 
@@ -131,7 +139,7 @@ def print_expiring_contracts(results: list[dict], days_ahead: int):
 
 
 def print_top_scorers(results: list[dict], season: str):
-    print(f"\ Top Goleadores — Temporada {season} ")
+    print(f"\nTop Goleadores — Temporada {season} ")
     if not results:
         print("  Sin estadísticas registradas para esta temporada.")
         return
@@ -171,26 +179,119 @@ def print_team_payroll(results: list[dict]):
         )
 
 
-def run_queries():
+
+from mongo_setup import get_match_box_score, get_player_season_stats, get_standings
+
+TITLES = {
+    "1": "Plantilla de un equipo (1.2)",
+    "2": "Resumen de un partido (1.3)",
+    "3": "Estadisticas de un jugador por temporada (1.4)",
+    "4": "Buscar jugadores por posicion, estado y edad (1.5)",
+    "5": "Contratos proximos a vencer (1.6)",
+    "6": "Clasificacion de una competicion (1.7)",
+    "7": "Top goleadores por temporada",
+    "8": "Masa salarial por equipo",
+}
+
+
+def run_queries(consulta="todas", team_id="t_01", match_id="m_01",
+                player_id="p_01", competition_id="c_01", season=None,
+                position="CM", status="Available", min_age=18, max_age=30,
+                days_ahead=365, limit=10):
+    if consulta != "todas" and str(consulta) not in TITLES:
+        raise ValueError("Consulta MongoDB desconocida.")
+    if not 0 <= min_age <= max_age <= 120:
+        raise ValueError("Las edades deben cumplir: 0 <= minima <= maxima <= 120.")
+    if days_ahead < 0 or limit < 1:
+        raise ValueError("Dias debe ser >= 0 y limite debe ser >= 1.")
+    season = season or season_default()
+    selected = list(TITLES) if consulta == "todas" else [str(consulta)]
     db = get_mongo_db()
+    try:
+        for code in selected:
+            if code == "1":
+                result = get_team_roster(db, team_id, season)
+            elif code == "2":
+                result = get_match_box_score(db, match_id)
+            elif code == "3":
+                result = get_player_season_stats(db, player_id, season)
+            elif code == "4":
+                result = search_players(db, position, status, min_age, max_age)
+            elif code == "5":
+                result = get_expiring_contracts(db, days_ahead)
+            elif code == "6":
+                result = get_standings(db, competition_id, season)
+            elif code == "7":
+                result = agg_top_scorers(db, season, limit)
+            else:
+                result = agg_team_payroll(db)
+            show_json(TITLES[code], result)
+    finally:
+        db.client.close()
 
-    res_players = search_players(db, position="CM", status="Available", min_age=18, max_age=30)
-    print_search_players(res_players)
 
-    days = 365
-    res_contracts = get_expiring_contracts(db, days_ahead=days)
-    print_expiring_contracts(res_contracts, days_ahead=days)
+def ask_and_run(code):
+    values = {"consulta": code}
+    def selected(*codes):
+        return code == "todas" or code in codes
+    if selected("1"):
+        values["team_id"] = ask_text("ID del equipo", "t_01")
+    if selected("2"):
+        values["match_id"] = ask_text("ID del partido", "m_01")
+    if selected("3"):
+        values["player_id"] = ask_text("ID del jugador", "p_01")
+    if selected("6"):
+        values["competition_id"] = ask_text("ID de la competicion", "c_01")
+    if selected("1", "3", "6", "7"):
+        values["season"] = ask_text("Temporada", season_default())
+    if selected("4"):
+        values["position"] = ask_text("Posicion", "CM")
+        values["status"] = ask_text("Estado", "Available")
+        values["min_age"] = ask_int("Edad minima", 18, 0, 120)
+        values["max_age"] = ask_int("Edad maxima", max(30, values["min_age"]), values["min_age"], 120)
+    if selected("5"):
+        values["days_ahead"] = ask_int("Dias hasta vencer", 365, 0)
+    if selected("7"):
+        values["limit"] = ask_int("Cantidad de goleadores", 10, 1)
+    run_queries(**values)
 
-    season = "2026-2027"
-    res_scorers = agg_top_scorers(db, season=season)
-    print_top_scorers(res_scorers, season=season)
 
-    roster = get_team_roster(db, team_id="t_01", season=season)
-    print_team_roster(roster, team_id="t_01", season=season)
+def menu():
+    actions = {
+        code: (title, lambda code=code: ask_and_run(code))
+        for code, title in TITLES.items()
+    }
+    actions["9"] = ("Ejecutar las ocho consultas", lambda: ask_and_run("todas"))
+    print("Las fechas de nacimiento y el rol CM del dataset son simulados.")
+    run_menu("MONGODB - CONSULTAS", actions)
 
-    payroll = agg_team_payroll(db)
-    print_team_payroll(payroll)
+
+def main():
+    parser = argparse.ArgumentParser(description="Consultas MongoDB de Scouts")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--menu", action="store_true")
+    mode.add_argument("--consulta", choices=["todas", *TITLES])
+    parser.add_argument("--equipo", default="t_01")
+    parser.add_argument("--partido", default="m_01")
+    parser.add_argument("--jugador", default="p_01")
+    parser.add_argument("--competicion", default="c_01")
+    parser.add_argument("--temporada", default=None)
+    parser.add_argument("--posicion", default="CM")
+    parser.add_argument("--estado", default="Available")
+    parser.add_argument("--edad-min", type=int, default=18)
+    parser.add_argument("--edad-max", type=int, default=30)
+    parser.add_argument("--dias", type=int, default=365)
+    parser.add_argument("--limite", type=int, default=10)
+    args = parser.parse_args()
+    if args.menu:
+        menu()
+    else:
+        if not 0 <= args.edad_min <= args.edad_max <= 120 or args.dias < 0 or args.limite < 1:
+            parser.error("Revisa las edades, dias y limite.")
+        run_queries(args.consulta or "todas", args.equipo, args.partido, args.jugador,
+                    args.competicion, args.temporada, args.posicion, args.estado,
+                    args.edad_min, args.edad_max, args.dias, args.limite)
 
 
 if __name__ == "__main__":
-    run_queries()
+    main()
