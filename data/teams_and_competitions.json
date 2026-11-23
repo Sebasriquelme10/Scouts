@@ -25,6 +25,12 @@
           "jersey_number": 9,
           "role": "Starter",
           "since": "2023-01-15"
+        },
+        {
+          "player_id": "p_04",
+          "jersey_number": 10,
+          "role": "Starter",
+          "since": "2026-07-01"
         }
       ]
     },
