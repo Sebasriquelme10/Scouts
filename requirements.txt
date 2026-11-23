@@ -1,0 +1,4 @@
+pymongo>=4.6,<5
+cassandra-driver>=3.30,<4
+pyasyncore; python_version >= "3.12"
+pydgraph==25.2.0
