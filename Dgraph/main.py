@@ -2,58 +2,142 @@ import json
 from connect import get_client
 
 
+CONSULTAS = [
+    ("2.1. Relación de Pertenencia Jugador-Equipo", """
+    {
+      player_team_membership(func: type(Player))
+        @filter(has(belongs)) {
+        player_id
+        name
+        positions
+
+        belongs @facets(since, jersey_number) {
+          team_id
+          team_name
+          season
+        }
+      }
+    }
+    """),
+
+    ("2.2. Participación de Jugadores en Partidos", """
+    {
+      player_match_participation(func: type(Player))
+        @filter(has(played_in)) {
+        player_id
+        name
+
+        played_in @facets(starter, minutes_played) {
+          match_id
+          date
+          competition
+        }
+      }
+    }
+    """),
+
+    ("2.3. Red de Agentes y Representantes", """
+    {
+      red_agencias(func: eq(player_id, "p_01"))
+        @filter(type(Player)) {
+        uid
+        player_id
+        name
+
+        represented_by {
+          uid
+          agent_id
+          name
+
+          ~represented_by @filter(type(Player)) {
+            uid
+            player_id
+            name
+          }
+        }
+      }
+    }
+    """),
+
+    ("2.4. Red de Pases", """
+    {
+      var(func: eq(team_id, "t_01"))
+        @filter(type(Team)) {
+        integrantes as ~belongs
+      }
+
+      red_pases(func: uid(integrantes))
+        @filter(type(Player)) {
+        uid
+        player_id
+        name
+
+        passed_to
+          @filter(uid(integrantes))
+          @facets(successful_passes_count) {
+          uid
+          player_id
+          name
+        }
+      }
+    }
+    """),
+
+    ("2.5. Química en Alineaciones", """
+    {
+      partidos as var(func: eq(winner_team_id, "t_01"))
+        @filter(type(Match)) {
+
+        ~played_in
+          @filter(type(Player))
+          @facets(eq(team_id, "t_01")) {
+          uno as math(1)
+        }
+
+        cantidad as sum(val(uno))
+      }
+
+      grupos_en_victorias(func: uid(partidos))
+        @filter(ge(val(cantidad), 3)) {
+        uid
+        match_id
+        date
+        competition
+        winner_team_id
+        cantidad_jugadores: val(cantidad)
+
+        ~played_in
+          @filter(type(Player))
+          @facets(eq(team_id, "t_01"))
+          @facets(starter, minutes_played, team_id) {
+          uid
+          player_id
+          name
+        }
+      }
+    }
+    """),
+]
+
+
 def run_dgraph_queries():
     client_stub, client = get_client()
+
     try:
-        # =====================================================================
-        # CONSULTA 2.1: Relación de Pertenencia Jugador-Equipo (Player -> Team)
-        # =====================================================================
-        query_2_1 = """
-        {
-            player_team_membership(func: type(Player)) @filter(has(belongs)) {
-                player_id
-                name
-                positions
-                belongs @facets(since, jersey_number) {
-                    team_id
-                    team_name
-                    season
-                }
-            }
-        }
-        """
-        txn = client.txn(read_only=True)
-        res_2_1 = txn.query(query_2_1)
-        print("=== 2.1. Relación de Pertenencia Jugador-Equipo ===")
-        print(json.dumps(json.loads(res_2_1.json), indent=2, ensure_ascii=False))
+        for titulo, consulta in CONSULTAS:
+            txn = client.txn(read_only=True)
 
-        # =====================================================================
-        # CONSULTA 2.2: Participación de Jugadores en Partidos (Player -> Match)
-        # =====================================================================
-        query_2_2 = """
-        {
-            player_match_participation(func: type(Player)) @filter(has(played_in)) {
-                player_id
-                name
-                played_in @facets(starter, minutes_played) {
-                    match_id
-                    date
-                    competition
-                }
-            }
-        }
-        """
-        txn = client.txn(read_only=True)
-        res_2_2 = txn.query(query_2_2)
-        print("\n=== 2.2. Participación de Jugadores en Partidos ===")
-        print(json.dumps(json.loads(res_2_2.json), indent=2, ensure_ascii=False))
+            try:
+                respuesta = txn.query(consulta)
 
-        # =====================================================================
-        # PENDIENTES PARA NACHO (Consultas 2.3, 2.4 y 2.5):
-        # - 2.3: Red de Agentes y Representantes (Player -represented_by-> Agent)
-        # - 2.4: Red de Pases e Interacción en Cancha (Player -passed_to-> Player)
-        # - 2.5: Descubrimiento de Química en Alineaciones (>= 3 jugadores)
-        # =====================================================================
+                print(f"\n=== {titulo} ===")
+                print(json.dumps(
+                    json.loads(respuesta.json),
+                    indent=2,
+                    ensure_ascii=False,
+                ))
+            finally:
+                txn.discard()
     finally:
         client_stub.close()
 
