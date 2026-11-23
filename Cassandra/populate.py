@@ -18,7 +18,7 @@ def populate_cassandra():
     teams_comp_raw = load_json("teams_and_competitions.json")
     matches_data = load_json("matches_and_events.json")
 
-    # Mapas en memoria para desnormalizar nombres al insertar en Cassandra
+    
     players_map = {p["player_id"]: p["name"] for p in players_raw}
     teams_list = (
         teams_comp_raw if isinstance(teams_comp_raw, list)
