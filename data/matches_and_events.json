@@ -38,12 +38,26 @@
   "live_scoreboard": [
     {
       "match_id": "m_01",
-      "quarter_period": 1,
-      "game_time_remaining": 1840,
+      "match_period": 1,
+      "match_minute": 15,
       "update_timestamp": "2026-11-15T19:14:25.100Z",
       "home_score": 1,
       "away_score": 0,
       "scoring_player_id": "p_02"
+    }
+  ],
+  "player_interval_stats": [
+    {
+      "match_id": "m_01",
+      "player_id": "p_01",
+      "team_id": "t_01",
+      "interval_timestamp": "2026-11-15T19:30:00.000Z",
+      "match_period": 1,
+      "interval_minute": 30,
+      "goals": 0,
+      "shots": 1,
+      "passes": 27,
+      "fouls": 1
     }
   ],
   "match_fouls": [

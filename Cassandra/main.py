@@ -1,7 +1,7 @@
 from connect import get_session
 
 
-def run_realtime_queries(match_id="M001", player_id="P010"):
+def run_realtime_queries(match_id="m_01", player_id="p_01"):
     cluster, session = get_session()
     session.set_keyspace("scouts")
     try:
