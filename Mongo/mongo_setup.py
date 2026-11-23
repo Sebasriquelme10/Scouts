@@ -10,10 +10,7 @@ def _parse_iso(date_str: str) -> datetime:
     return datetime.fromisoformat(date_str.replace("Z", "+00:00"))
 
 
-# ==========================================
 # 1. ÍNDICES Y POBLADO COMPLETO
-# ==========================================
-
 def ensure_indexes(db):
     db.players.create_index([("positions", 1), ("status", 1), ("birth_date", 1)])
     db.players.create_index([("contracts.contract_end", 1)])
@@ -72,10 +69,7 @@ def seed_all_mongo(db):
         )
 
 
-# ==========================================
 # 2. CONSULTAS POR REQUERIMIENTO FUNCIONAL
-# ==========================================
-
 # Req 1.1: Registro / Actualización de Perfil del Jugador
 def upsert_player_profile(db, player_doc: dict):
     return db.players.update_one(
@@ -156,10 +150,7 @@ def get_standings(db, competition_id: str, season: str):
     )
 
 
-# ==========================================
 # 3. PIPELINES DE AGREGACIÓN ANALÍTICA
-# ==========================================
-
 # Pipeline A: Ranking de mejores anotadores / aportadores por temporada
 def agg_top_scorers(db, season: str, limit: int = 10):
     pipeline = [
