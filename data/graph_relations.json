@@ -31,11 +31,48 @@
   }
 ],
   "played_in": [
-    { "player_id": "p_01", "match_id": "m_01", "starter": true, "minutes_played": 88 }
-  ],
+  {
+    "player_id": "p_01",
+    "match_id": "m_01",
+    "team_id": "t_01",
+    "starter": true,
+    "minutes_played": 88
+  },
+  {
+    "player_id": "p_02",
+    "match_id": "m_01",
+    "team_id": "t_01",
+    "starter": true,
+    "minutes_played": 90
+  },
+  {
+    "player_id": "p_04",
+    "match_id": "m_01",
+    "team_id": "t_01",
+    "starter": true,
+    "minutes_played": 75
+  }
+],
   "passed_to": [
-    { "from_player_id": "p_01", "to_player_id": "p_02", "match_id": "m_01", "successful_passes_count": 27 }
-  ],
+  {
+    "from_player_id": "p_01",
+    "to_player_id": "p_02",
+    "match_id": "m_01",
+    "successful_passes_count": 27
+  },
+  {
+    "from_player_id": "p_02",
+    "to_player_id": "p_04",
+    "match_id": "m_01",
+    "successful_passes_count": 18
+  },
+  {
+    "from_player_id": "p_04",
+    "to_player_id": "p_01",
+    "match_id": "m_01",
+    "successful_passes_count": 15
+  }
+],
   "faced_in_duel": [
     { "player_a_id": "p_01", "player_b_id": "p_03", "match_id": "m_01", "duels_won": 5 }
   ],
