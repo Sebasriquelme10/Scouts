@@ -48,26 +48,26 @@
     ]
   },
   {
-  "player_id": "p_04",
-  "name": "Andrés Castillo",
-  "birth_date": "2000-06-18T00:00:00Z",
-  "nationality": "MX",
-  "status": "Available",
-  "physical_traits": {
-    "height_cm": 181,
-    "weight_kg": 76
-  },
-  "positions": ["CM", "CDM"],
-  "agent_id": "a_01",
-  "contracts": [
-    {
-      "contract_id": "ctr_104",
-      "team_id": "t_01",
-      "salary_per_year": 480000,
-      "contract_start": "2026-07-01T00:00:00Z",
-      "contract_end": "2029-06-30T00:00:00Z",
-      "buyout_clause": 4000000,
-      "active": true
+      "player_id": "p_04",
+      "name": "Andrés Castillo",
+      "birth_date": "2000-06-18T00:00:00Z",
+      "nationality": "MX",
+      "status": "Available",
+      "physical_traits": {
+        "height_cm": 181,
+        "weight_kg": 76
+      },
+      "positions": ["CM", "CDM"],
+      "agent_id": "a_01",
+      "contracts": [
+        {
+          "contract_id": "ctr_104",
+          "team_id": "t_01",
+          "salary_per_year": 480000,
+          "contract_start": "2026-07-01T00:00:00Z",
+          "contract_end": "2029-06-30T00:00:00Z",
+          "buyout_clause": 4000000,
+          "active": true
     }
   ]
 }
