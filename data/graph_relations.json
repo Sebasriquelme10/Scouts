@@ -10,9 +10,26 @@
       "date": "2026-11-16T00:00:00Z"
     }
   ],
-  "belongs": [
-    { "player_id": "p_01", "team_id": "t_01", "since": "2024-07-01T00:00:00Z", "jersey_number": 8 }
-  ],
+  "belongs":[
+  {
+    "player_id": "p_01",
+    "team_id": "t_01",
+    "since": "2024-07-01T00:00:00Z",
+    "jersey_number": 8
+  },
+  {
+    "player_id": "p_02",
+    "team_id": "t_01",
+    "since": "2023-01-15T00:00:00Z",
+    "jersey_number": 9
+  },
+  {
+    "player_id": "p_04",
+    "team_id": "t_01",
+    "since": "2026-07-01T00:00:00Z",
+    "jersey_number": 10
+  }
+],
   "played_in": [
     { "player_id": "p_01", "match_id": "m_01", "starter": true, "minutes_played": 88 }
   ],
