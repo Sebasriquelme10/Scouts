@@ -10,36 +10,779 @@
   "teams": [
     {
       "team_id": "t_01",
-      "team_name": "Club Titanes",
+      "team_name": "América",
       "season": "2026-2027",
-      "head_coach": "Carlos Herrera",
+      "head_coach": "Guillermo Almada",
       "roster": [
         {
           "player_id": "p_01",
-          "jersey_number": 8,
+          "jersey_number": 1,
           "role": "Starter",
-          "since": "2024-07-01"
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
         },
         {
           "player_id": "p_02",
-          "jersey_number": 9,
+          "jersey_number": 3,
           "role": "Starter",
-          "since": "2023-01-15"
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_03",
+          "jersey_number": 13,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
         },
         {
           "player_id": "p_04",
-          "jersey_number": 10,
+          "jersey_number": 9,
           "role": "Starter",
-          "since": "2026-07-01"
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
         }
-      ]
+      ],
+      "data_provenance": {
+        "club_and_players": "https://mexico.as.com/resultados/ficha/equipo/america/96/plantilla/",
+        "head_coach": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+        "consulted_on": "2026-11-23",
+        "sample_size": 4,
+        "roster_since_and_roles": "simulated"
+      }
     },
     {
       "team_id": "t_02",
-      "team_name": "Deportivo Norte",
+      "team_name": "Atlante",
       "season": "2026-2027",
-      "head_coach": "Luis Mendoza",
-      "roster": []
+      "head_coach": "Miguel Herrera",
+      "roster": [
+        {
+          "player_id": "p_05",
+          "jersey_number": 26,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_06",
+          "jersey_number": 4,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_07",
+          "jersey_number": 18,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_08",
+          "jersey_number": 9,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        }
+      ],
+      "data_provenance": {
+        "club_and_players": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+        "head_coach": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+        "consulted_on": "2026-11-23",
+        "sample_size": 4,
+        "roster_since_and_roles": "simulated"
+      }
+    },
+    {
+      "team_id": "t_03",
+      "team_name": "Atlas",
+      "season": "2026-2027",
+      "head_coach": "Hernán Crespo",
+      "roster": [
+        {
+          "player_id": "p_09",
+          "jersey_number": 12,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_10",
+          "jersey_number": 13,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_11",
+          "jersey_number": 26,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_12",
+          "jersey_number": 9,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        }
+      ],
+      "data_provenance": {
+        "club_and_players": "https://mexico.as.com/resultados/ficha/equipo/atlas/4223/plantilla/",
+        "head_coach": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+        "consulted_on": "2026-11-23",
+        "sample_size": 4,
+        "roster_since_and_roles": "simulated"
+      }
+    },
+    {
+      "team_id": "t_04",
+      "team_name": "Atlético de San Luis",
+      "season": "2026-2027",
+      "head_coach": "Diego Mejía",
+      "roster": [
+        {
+          "player_id": "p_13",
+          "jersey_number": 1,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_14",
+          "jersey_number": 31,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_15",
+          "jersey_number": 10,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_16",
+          "jersey_number": 9,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        }
+      ],
+      "data_provenance": {
+        "club_and_players": "https://mexico.as.com/resultados/ficha/equipo/san_luis/3834/plantilla/",
+        "head_coach": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+        "consulted_on": "2026-11-23",
+        "sample_size": 4,
+        "roster_since_and_roles": "simulated"
+      }
+    },
+    {
+      "team_id": "t_05",
+      "team_name": "FC Juárez",
+      "season": "2026-2027",
+      "head_coach": "Gustavo Lema",
+      "roster": [
+        {
+          "player_id": "p_17",
+          "jersey_number": 1,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_18",
+          "jersey_number": 4,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_19",
+          "jersey_number": 5,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_20",
+          "jersey_number": 19,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        }
+      ],
+      "data_provenance": {
+        "club_and_players": "https://mexico.as.com/resultados/ficha/equipo/futbol_club_juarez/4641/plantilla/",
+        "head_coach": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+        "consulted_on": "2026-11-23",
+        "sample_size": 4,
+        "roster_since_and_roles": "simulated"
+      }
+    },
+    {
+      "team_id": "t_06",
+      "team_name": "Guadalajara",
+      "season": "2026-2027",
+      "head_coach": "Gabriel Milito",
+      "roster": [
+        {
+          "player_id": "p_21",
+          "jersey_number": 1,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_22",
+          "jersey_number": 4,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_23",
+          "jersey_number": 7,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_24",
+          "jersey_number": 25,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        }
+      ],
+      "data_provenance": {
+        "club_and_players": "https://mexico.as.com/resultados/ficha/equipo/chivas/3678/plantilla/",
+        "head_coach": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+        "consulted_on": "2026-11-23",
+        "sample_size": 4,
+        "roster_since_and_roles": "simulated"
+      }
+    },
+    {
+      "team_id": "t_07",
+      "team_name": "Cruz Azul",
+      "season": "2026-2027",
+      "head_coach": "Joel Huiqui",
+      "roster": [
+        {
+          "player_id": "p_25",
+          "jersey_number": 23,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_26",
+          "jersey_number": 4,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_27",
+          "jersey_number": 19,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_28",
+          "jersey_number": 21,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        }
+      ],
+      "data_provenance": {
+        "club_and_players": "https://mexico.as.com/resultados/ficha/equipo/cruz_azul/4204/plantilla/",
+        "head_coach": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+        "consulted_on": "2026-11-23",
+        "sample_size": 4,
+        "roster_since_and_roles": "simulated"
+      }
+    },
+    {
+      "team_id": "t_08",
+      "team_name": "Querétaro",
+      "season": "2026-2027",
+      "head_coach": "Esteban González",
+      "roster": [
+        {
+          "player_id": "p_29",
+          "jersey_number": 25,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_30",
+          "jersey_number": 2,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_31",
+          "jersey_number": 5,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_32",
+          "jersey_number": 11,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        }
+      ],
+      "data_provenance": {
+        "club_and_players": "https://mexico.as.com/resultados/ficha/equipo/queretaro/4251/plantilla/",
+        "head_coach": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+        "consulted_on": "2026-11-23",
+        "sample_size": 4,
+        "roster_since_and_roles": "simulated"
+      }
+    },
+    {
+      "team_id": "t_09",
+      "team_name": "León",
+      "season": "2026-2027",
+      "head_coach": "Javier Gandolfi",
+      "roster": [
+        {
+          "player_id": "p_33",
+          "jersey_number": 23,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_34",
+          "jersey_number": 25,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_35",
+          "jersey_number": 6,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_36",
+          "jersey_number": 27,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        }
+      ],
+      "data_provenance": {
+        "club_and_players": "https://mexico.as.com/resultados/ficha/equipo/leon_fc/3981/plantilla/",
+        "head_coach": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+        "consulted_on": "2026-11-23",
+        "sample_size": 4,
+        "roster_since_and_roles": "simulated"
+      }
+    },
+    {
+      "team_id": "t_10",
+      "team_name": "Necaxa",
+      "season": "2026-2027",
+      "head_coach": "Juan Reynoso",
+      "roster": [
+        {
+          "player_id": "p_37",
+          "jersey_number": 12,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_38",
+          "jersey_number": 4,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_39",
+          "jersey_number": 8,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_40",
+          "jersey_number": 9,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        }
+      ],
+      "data_provenance": {
+        "club_and_players": "https://mexico.as.com/resultados/ficha/equipo/nexaca/4282/plantilla/",
+        "head_coach": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+        "consulted_on": "2026-11-23",
+        "sample_size": 4,
+        "roster_since_and_roles": "simulated"
+      }
+    },
+    {
+      "team_id": "t_11",
+      "team_name": "Pachuca",
+      "season": "2026-2027",
+      "head_coach": "Benjamín Mora",
+      "roster": [
+        {
+          "player_id": "p_41",
+          "jersey_number": 25,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_42",
+          "jersey_number": 4,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_43",
+          "jersey_number": 26,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_44",
+          "jersey_number": 23,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        }
+      ],
+      "data_provenance": {
+        "club_and_players": "https://mexico.as.com/resultados/ficha/equipo/pachuca/4245/plantilla/",
+        "head_coach": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+        "consulted_on": "2026-11-23",
+        "sample_size": 4,
+        "roster_since_and_roles": "simulated"
+      }
+    },
+    {
+      "team_id": "t_12",
+      "team_name": "Puebla",
+      "season": "2026-2027",
+      "head_coach": "Gerardo Espinoza",
+      "roster": [
+        {
+          "player_id": "p_45",
+          "jersey_number": 33,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_46",
+          "jersey_number": 4,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_47",
+          "jersey_number": 17,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_48",
+          "jersey_number": 26,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        }
+      ],
+      "data_provenance": {
+        "club_and_players": "https://mexico.as.com/resultados/ficha/equipo/puebla/4246/plantilla/",
+        "head_coach": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+        "consulted_on": "2026-11-23",
+        "sample_size": 4,
+        "roster_since_and_roles": "simulated"
+      }
+    },
+    {
+      "team_id": "t_13",
+      "team_name": "Pumas UNAM",
+      "season": "2026-2027",
+      "head_coach": "Esteban Solari",
+      "roster": [
+        {
+          "player_id": "p_49",
+          "jersey_number": 1,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_50",
+          "jersey_number": 6,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_51",
+          "jersey_number": 8,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_52",
+          "jersey_number": 31,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        }
+      ],
+      "data_provenance": {
+        "club_and_players": "https://mexico.as.com/resultados/ficha/equipo/pumas/1597/plantilla/",
+        "head_coach": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+        "consulted_on": "2026-11-23",
+        "sample_size": 4,
+        "roster_since_and_roles": "simulated"
+      }
+    },
+    {
+      "team_id": "t_14",
+      "team_name": "Monterrey",
+      "season": "2026-2027",
+      "head_coach": "Matías Almeyda",
+      "roster": [
+        {
+          "player_id": "p_53",
+          "jersey_number": 1,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_54",
+          "jersey_number": 33,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_55",
+          "jersey_number": 8,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_56",
+          "jersey_number": 27,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        }
+      ],
+      "data_provenance": {
+        "club_and_players": "https://mexico.as.com/resultados/ficha/equipo/monterrey/4248/plantilla/",
+        "head_coach": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+        "consulted_on": "2026-11-23",
+        "sample_size": 4,
+        "roster_since_and_roles": "simulated"
+      }
+    },
+    {
+      "team_id": "t_15",
+      "team_name": "Santos Laguna",
+      "season": "2026-2027",
+      "head_coach": "Renato Paiva",
+      "roster": [
+        {
+          "player_id": "p_57",
+          "jersey_number": 1,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_58",
+          "jersey_number": 2,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_59",
+          "jersey_number": 5,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_60",
+          "jersey_number": 19,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        }
+      ],
+      "data_provenance": {
+        "club_and_players": "https://mexico.as.com/resultados/ficha/equipo/santos_laguna/4250/plantilla/",
+        "head_coach": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+        "consulted_on": "2026-11-23",
+        "sample_size": 4,
+        "roster_since_and_roles": "simulated"
+      }
+    },
+    {
+      "team_id": "t_16",
+      "team_name": "Tigres UANL",
+      "season": "2026-2027",
+      "head_coach": "Víctor Manuel Vucetich",
+      "roster": [
+        {
+          "player_id": "p_61",
+          "jersey_number": 1,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_62",
+          "jersey_number": 27,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_63",
+          "jersey_number": 8,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_64",
+          "jersey_number": 17,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        }
+      ],
+      "data_provenance": {
+        "club_and_players": "https://mexico.as.com/resultados/ficha/equipo/tigres/4210/plantilla/",
+        "head_coach": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+        "consulted_on": "2026-11-23",
+        "sample_size": 4,
+        "roster_since_and_roles": "simulated"
+      }
+    },
+    {
+      "team_id": "t_17",
+      "team_name": "Toluca",
+      "season": "2026-2027",
+      "head_coach": "Antonio Mohamed",
+      "roster": [
+        {
+          "player_id": "p_65",
+          "jersey_number": 1,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_66",
+          "jersey_number": 20,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_67",
+          "jersey_number": 14,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_68",
+          "jersey_number": 26,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        }
+      ],
+      "data_provenance": {
+        "club_and_players": "https://mexico.as.com/resultados/ficha/equipo/toluca/4249/plantilla/",
+        "head_coach": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+        "consulted_on": "2026-11-23",
+        "sample_size": 4,
+        "roster_since_and_roles": "simulated"
+      }
+    },
+    {
+      "team_id": "t_18",
+      "team_name": "Tijuana",
+      "season": "2026-2027",
+      "head_coach": "Sebastián Abreu",
+      "roster": [
+        {
+          "player_id": "p_69",
+          "jersey_number": 2,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_70",
+          "jersey_number": 4,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_71",
+          "jersey_number": 10,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        },
+        {
+          "player_id": "p_72",
+          "jersey_number": 7,
+          "role": "Starter",
+          "since": "2026-07-01",
+          "role_and_since_simulated": true
+        }
+      ],
+      "data_provenance": {
+        "club_and_players": "https://mexico.as.com/resultados/ficha/equipo/tijuana/3828/plantilla/",
+        "head_coach": "https://us.marca.com/soccer/liga-mx/apertura-equipos.shtml",
+        "consulted_on": "2026-11-23",
+        "sample_size": 4,
+        "roster_since_and_roles": "simulated"
+      }
     }
   ]
 }
+
+
