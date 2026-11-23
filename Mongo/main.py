@@ -165,16 +165,22 @@ def print_team_roster(results: list[dict], team_id: str, season: str = None):
         )
 
 
-def print_team_payroll(results: list[dict]):
+def print_team_payroll(results: list[dict], db):
     print("\n Masa Salarial Activa por Equipo ")
     if not results:
         print("  No hay contratos activos registrados.")
         return
+    
     for row in results:
+        tid = row.get("_id")
+        team_doc = db.teams.find_one({"team_id": tid}, {"_id": 0, "team_name": 1})
+        tname = (team_doc or {}).get("team_name")
+        team_label = f"{tname} ({tid})" if tname else tid
+
         total = f"${row.get('total_annual_salary', 0):,.0f}"
         avg = f"${row.get('avg_salary', 0):,.0f}"
         print(
-            f"  • Equipo: {row.get('_id')} | Jugadores activos: {row.get('active_players')} | "
+            f"  • Equipo: {team_label} | Jugadores activos: {row.get('active_players')} | "
             f"Total anual: {total} | Promedio: {avg}"
         )
 
@@ -225,6 +231,8 @@ def run_queries(consulta="todas", team_id="t_01", match_id="m_01",
                 result = agg_top_scorers(db, season, limit)
             else:
                 result = agg_team_payroll(db)
+                print_team_payroll(result, db)
+                continue
             show_json(TITLES[code], result)
     finally:
         db.client.close()
